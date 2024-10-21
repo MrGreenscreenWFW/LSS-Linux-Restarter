@@ -4,7 +4,7 @@
 SESSION_NAME="Restart"
 
 # Skript, das in der neuen screen-Sitzung ausgeführt werden soll
-SCRIPT="/home/timan/LSSBot/Restarter.sh"
+SCRIPT="/home/$USER/LSSBot/Restarter.sh"
 
 # Prüfe, ob die Session schon existiert
 if screen -list | grep -q "$SESSION_NAME"; then
