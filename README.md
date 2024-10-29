@@ -14,6 +14,7 @@ Ein Skript zur Installation von .NET 8 auf Raspbian. Es führt die folgenden Sch
 
 Verwendung:
 ```bash
+chmod +x install_dotnet8.sh
 ./install_dotnet8.sh
 ```
 
