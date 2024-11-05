@@ -1,7 +1,7 @@
 #!/bin/bash
 ###################################################################
 #Script Name:LSS-Bot Restarter Input
-#Description:Script für die Überwachung vom MSC-Bot                                                                                           
+#Description:Script für die Überwachung vom MSC-Bot
 ###################################################################
 #Variablen:
 anzahl=1
