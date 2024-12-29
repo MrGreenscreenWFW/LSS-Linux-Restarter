@@ -13,7 +13,7 @@ sudo apt install -y libc6 libgcc1 libgssapi-krb5-2 libssl1.1 libstdc++6 zlib1g
 
 # Download the .NET SDK 8.0 for ARM64
 echo "Downloading .NET 8 SDK for ARM64..."
-wget https://download.visualstudio.microsoft.com/download/pr/7a4d5ed7-e6f5-4b2e-a4b8-6209e2a5b4cd/2f6a9b00e399b9ff20727ab2f17d6057/dotnet-sdk-8.0.100-linux-arm64.tar.gz -O dotnet-sdk-8.0.100-linux-arm64.tar.gz
+wget https://download.visualstudio.microsoft.com/download/pr/5ac82fcb-c260-4c46-b62f-8cde2ddfc625/feb12fc704a476ea2227c57c81d18cdf/dotnet-sdk-8.0.404-linux-arm64.tar.gz -O dotnet-sdk-8.0.404-linux-arm64.tar.gz
 
 # Create installation directory
 echo "Creating installation directory..."
@@ -21,10 +21,10 @@ mkdir -p $HOME/dotnet8
 
 # Extract .NET SDK
 echo "Extracting .NET SDK..."
-tar zxf dotnet-sdk-8.0.100-linux-arm64.tar.gz -C $HOME/dotnet
+tar zxf dotnet-sdk-8.0.404-linux-arm64.tar.gz -C $HOME/dotnet
 
 # Clean up the downloaded archive
-rm dotnet-sdk-8.0.100-linux-arm64.tar.gz
+rm dotnet-sdk-8.0.404-linux-arm64.tar.gz
 
 # Add DOTNET_ROOT and update PATH in .bashrc
 echo "Configuring environment variables..."
