@@ -21,10 +21,10 @@ mkdir -p $HOME/dotnet
 
 # Extract .NET SDK
 echo "Extracting .NET SDK..."
-tar zxf dotnet-sdk-9.0.XXX-linux-arm64.tar.gz -C $HOME/dotnet
+tar zxf dotnet-sdk-9.0.101-linux-arm64.tar.gz -C $HOME/dotnet
 
 # Clean up the downloaded archive
-rm dotnet-sdk-9.0.XXX-linux-arm64.tar.gz
+rm dotnet-sdk-9.0.101-linux-arm64.tar.gz
 
 # Add DOTNET_ROOT and update PATH in .bashrc
 echo "Configuring environment variables..."
