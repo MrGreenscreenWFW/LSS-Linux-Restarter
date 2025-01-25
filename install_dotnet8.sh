@@ -17,7 +17,7 @@ wget https://download.visualstudio.microsoft.com/download/pr/5ac82fcb-c260-4c46-
 
 # Create installation directory
 echo "Creating installation directory..."
-mkdir -p $HOME/dotnet8
+mkdir -p $HOME/dotnet
 
 # Extract .NET SDK
 echo "Extracting .NET SDK..."
