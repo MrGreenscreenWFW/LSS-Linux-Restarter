@@ -34,12 +34,12 @@ case $yn in
                         ProccessWatcher=$(screen -ls | screen -ls | sed -rn 's/([[:digit:]]+)(.Service.Mission-Chief.+)/\1/p' | xargs);
                         ProccessWatcher="$ProccessWatcher" | xargs;
                         if [[ -z "$ProccessWatcher" ]];
-                            then screen -dmS "Service.Mission-Chief" bash -c 'cd ./home/timan/LSSBot; dotnet BotNix.App.dll; /usr/bin/exec bash';
+                            then screen -dmS "Service.Mission-Chief" bash -c 'cd $HOME/LSSBot; dotnet BotNix.App.dll; /usr/bin/exec bash';
                         fi
                         if [[ $(pstree "$ProccessWatcher") != *"dotnet"* ]];
                             then
                             screen -X -S "Service.Mission-Chief" kill
-                            screen -dmS "Service.Mission-Chief" bash -c 'cd ./home/timan/LSSBot; dotnet BotNix.App.dll; /usr/bin/exec bash';
+                            screen -dmS "Service.Mission-Chief" bash -c 'cd $HOME/LSSBot; dotnet BotNix.App.dll; /usr/bin/exec bash';
                         fi
                         timestamp=$(date +%H:%M:%S)
                         echo -e "Latest check: $GREEN$timestamp$NORMAL "
@@ -70,12 +70,12 @@ case $yn in
                         ProccessWatcher=$(screen -ls | screen -ls | sed -rn 's/([[:digit:]]+)(.Service.Mission-Chief.+)/\1/p' | xargs);
                         ProccessWatcher="$ProccessWatcher" | xargs;
                         if [[ -z "$ProccessWatcher" ]];
-                            then screen -dmS "Service.Mission-Chief" bash -c 'cd ./home/timan/LSSBot; dotnet BotNix.App.dll; /usr/bin/exec bash';
+                            then screen -dmS "Service.Mission-Chief" bash -c 'cd $HOME/LSSBot; dotnet BotNix.App.dll; /usr/bin/exec bash';
                         fi
                         if [[ $(pstree "$ProccessWatcher") != *"dotnet"* ]];
                             then
                             screen -X -S "Service.Mission-Chief" kill
-                            screen -dmS "Service.Mission-Chief" bash -c 'cd ./home/timan/LSSBot; dotnet BotNix.App.dll; /usr/bin/exec bash';
+                            screen -dmS "Service.Mission-Chief" bash -c 'cd $HOME/LSSBot; dotnet BotNix.App.dll; /usr/bin/exec bash';
                         fi
                         timestamp=$(date +%H:%M:%S)
                         echo -e "Latest check: $GREEN$timestamp$NORMAL "
